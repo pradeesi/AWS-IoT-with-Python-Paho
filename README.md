@@ -6,5 +6,5 @@ https://iotbytes.wordpress.com/mqtt-with-aws-iot-using-python-and-paho/
 
 ## Informations that are not listed in the above site are :
 ### There is no metion about the policy that should be attached to the certificates generated.
-#### A sample policy is attached, that by default, all iot access to the edge device using that certificate.
+#### A sample policy is attached, that by default, allows all iot access to the edge device using that certificate.
 
