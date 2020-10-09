@@ -15,7 +15,7 @@ THING_PRIVATE_KEY = "put your Thing's Private Key File Name here"
 
 # Define on connect event function
 # We shall subscribe to our Topic in this function
-def on_connect(mosq, obj, rc):
+def on_connect(self, mosq, obj, rc):
     mqttc.subscribe(MQTT_TOPIC, 0)
 
 # Define on_message event function. 
@@ -28,7 +28,7 @@ def on_message(mosq, obj, msg):
 
 def on_subscribe(mosq, obj, mid, granted_qos):
     print("Subscribed to Topic: " + 
-	MQTT_MSG + " with QoS: " + str(granted_qos))
+	MQTT_TOPIC + " with QoS: " + str(granted_qos))
 
 # Initiate MQTT Client
 mqttc = mqtt.Client()
