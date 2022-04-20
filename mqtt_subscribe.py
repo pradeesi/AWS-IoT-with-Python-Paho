@@ -15,7 +15,7 @@ THING_PRIVATE_KEY = "put your Thing's Private Key File Name here"
 
 # Define on connect event function
 # We shall subscribe to our Topic in this function
-def on_connect(mosq, obj, rc):
+def on_connect(mosq, obj, flags, rc):
     mqttc.subscribe(MQTT_TOPIC, 0)
 
 # Define on_message event function. 
